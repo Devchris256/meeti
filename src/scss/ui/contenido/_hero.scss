@@ -1,0 +1,26 @@
+@use '../../base/variables' as v;
+@use '../../base/minxis' as m;
+
+.hero {
+    min-height: 37.5rem;
+    background-image: url(../img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    
+
+    &__title {
+        max-inline-size: 37.5rem;
+        color: v.$white;
+        text-transform: uppercase
+    }
+    &__link {
+        @include m.button(v.$terciary, v.$white);
+    }
+}

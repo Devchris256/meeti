@@ -1,0 +1,18 @@
+@use '../../base/variables' as v;
+@use '../../base/minxis' as m;
+
+.header {
+    padding: 1.25rem 0;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        @include m.tablet { 
+            flex-direction: row;
+            justify-content: space-between
+        }
+    }
+
+}

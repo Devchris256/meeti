@@ -53,3 +53,9 @@
     margin: 0;
     color: v.$grey;
 }
+
+@mixin imgformat($gradient, $img) {
+    @supports(background-image:$img){
+        background-image: $gradient, $img;
+    }
+}

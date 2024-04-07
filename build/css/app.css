@@ -1,27 +1,27 @@
 @font-face {
   font-family: "Staatliches";
-  src: url("../fonts/Staatliches-Regular.woff2") format("woff2"), url("../fonts/Staatliches-Regular.woff") format("woff"), url("../fonts/Staatliches-Regular.ttf") format("truetype");
+  src: url("../font/Staatliches-Regular.woff2") format("woff2"), url("../font/Staatliches-Regular.woff") format("woff"), url("../font/Staatliches-Regular.ttf") format("truetype");
   font-weight: 400;
 }
 @font-face {
   font-family: "Raleway";
-  src: url("../fonts/Raleway-Regular.woff2") format("woff2"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.ttf") format("truetype");
+  src: url("../font/Raleway-Regular.woff2") format("woff2"), url("../font/Raleway-Regular.woff") format("woff"), url("../font/Raleway-Regular.ttf") format("truetype");
   font-weight: 400;
 }
 @font-face {
   font-family: "Raleway";
-  src: url("../fonts/Raleway-Bold.woff2") format("woff2"), url("../fonts/Raleway-Bold.woff") format("woff"), url("../fonts/Raleway-Bold.ttf") format("truetype");
+  src: url("../font/Raleway-Bold.woff2") format("woff2"), url("../font/Raleway-Bold.woff") format("woff"), url("../font/Raleway-Bold.ttf") format("truetype");
   font-weight: 700;
 }
 @font-face {
   font-family: "Raleway";
-  src: url("../fonts/Raleway-Black.woff2") format("woff2"), url("../fonts/Raleway-Black.woff") format("woff"), url("../fonts/Raleway-Black.ttf") format("truetype");
+  src: url("../font/Raleway-Black.woff2") format("woff2"), url("../font/Raleway-Black.woff") format("woff"), url("../font/Raleway-Black.ttf") format("truetype");
   font-weight: 900;
 }
 @supports (font-variation-settings: normal) {
   @font-face {
     font-family: "Raleway";
-    src: url("../fonts/Raleway-VariableFont_wght.woff2") format(woff2) tech(variations), url("../fonts/Raleway-VariableFont_wght.woff2") format("woff2-variations");
+    src: url("../font/Raleway-VariableFont_wght.woff2") format(woff2) tech(variations), url("../font/Raleway-VariableFont_wght.woff2") format("woff2-variations");
     font-weight: 100 900;
   }
 }
@@ -51,5 +51,122 @@ ul {
   padding: 0;
   list-style: none;
   margin: 0;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.75rem;
+  font-family: "Staatliches", cursive;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-family: "Staatliches", cursive;
+}
+
+h3 {
+  font-size: 1.875rem;
+}
+
+[class$=title] {
+  margin: 1.25rem 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+p {
+  color: #000;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.header {
+  padding: 1.25rem 0;
+}
+.header__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .header__content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+@media (min-width: 768px) {
+  .navigation {
+    flex-direction: row;
+  }
+}
+.navigation__link {
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+}
+.navigation__link--crear {
+  font-weight: 700;
+  color: #B8336A;
+}
+@media (min-width: 768px) {
+  .navigation__link--crear::after {
+    content: "";
+    display: inline-block;
+    height: 2.5rem;
+    border-right: 2px solid #F2F2F2;
+    margin: 0 0 0 1.25rem;
+  }
+}
+
+.hero {
+  min-height: 37.5rem;
+  background-image: url(../img/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero__title {
+  max-inline-size: 37.5rem;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+.hero__link {
+  background-color: #ff8015;
+  padding: 1rem 2.5rem;
+  color: #FFFFFF;
+  margin-top: 1.25rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  display: inline-block;
+  font-weight: 700;
+  border: none;
+  transition-property: background-color;
+  transition-duration: 0.3s;
+}
+@media (min-width: 768px) {
+  .hero__link {
+    inline-size: auto;
+  }
+}
+.hero__link:hover {
+  background-color: #e16700;
 }
 /*# sourceMappingURL=app.css.map */

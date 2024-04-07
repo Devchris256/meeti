@@ -3,9 +3,9 @@
 @font-face {
     font-family: "Staatliches";
     src:
-      url("../fonts/Staatliches-Regular.woff2") format("woff2"),
-      url("../fonts/Staatliches-Regular.woff") format("woff"),
-      url("../fonts/Staatliches-Regular.ttf") format("truetype");
+      url("../font/Staatliches-Regular.woff2") format("woff2"),
+      url("../font/Staatliches-Regular.woff") format("woff"),
+      url("../font/Staatliches-Regular.ttf") format("truetype");
     font-weight: 400;
 }
 
@@ -14,27 +14,27 @@
 @font-face {
     font-family: "Raleway";
     src:
-      url("../fonts/Raleway-Regular.woff2") format("woff2"),
-      url("../fonts/Raleway-Regular.woff") format("woff"),
-      url("../fonts/Raleway-Regular.ttf") format("truetype");
+      url("../font/Raleway-Regular.woff2") format("woff2"),
+      url("../font/Raleway-Regular.woff") format("woff"),
+      url("../font/Raleway-Regular.ttf") format("truetype");
     font-weight: 400;
 }
 
 @font-face {
     font-family: "Raleway";
     src:
-      url("../fonts/Raleway-Bold.woff2") format("woff2"),
-      url("../fonts/Raleway-Bold.woff") format("woff"),
-      url("../fonts/Raleway-Bold.ttf") format("truetype");
+      url("../font/Raleway-Bold.woff2") format("woff2"),
+      url("../font/Raleway-Bold.woff") format("woff"),
+      url("../font/Raleway-Bold.ttf") format("truetype");
     font-weight: 700;
 }
 
 @font-face {
     font-family: "Raleway";
     src:
-      url("../fonts/Raleway-Black.woff2") format("woff2"),
-      url("../fonts/Raleway-Black.woff") format("woff"),
-      url("../fonts/Raleway-Black.ttf") format("truetype");
+      url("../font/Raleway-Black.woff2") format("woff2"),
+      url("../font/Raleway-Black.woff") format("woff"),
+      url("../font/Raleway-Black.ttf") format("truetype");
     font-weight: 900;
 }
 
@@ -45,8 +45,8 @@
     @font-face {
       font-family: "Raleway";
       src:
-        url("../fonts/Raleway-VariableFont_wght.woff2") format(woff2) tech(variations),  /* Sintaxis moderna */
-        url("../fonts/Raleway-VariableFont_wght.woff2") format("woff2-variations");
+        url("../font/Raleway-VariableFont_wght.woff2") format(woff2) tech(variations),  /* Sintaxis moderna */
+        url("../font/Raleway-VariableFont_wght.woff2") format("woff2-variations");
       font-weight: 100 900;
     }
 }
