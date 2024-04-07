@@ -24,7 +24,8 @@
 .event {
     border: 1px solid v.$greyLight;
     &__img {
-        width: 100%;
+        inline-size: 100%;
+        block-size: auto;
     }
     &__content {
         padding: 1.25rem;
@@ -47,6 +48,11 @@
         inline-size: 6.25rem;
         border-radius: 50%;
         overflow: hidden;
+    }
+
+    &__author--img {
+        inline-size: 100%;
+        block-size: auto;
     }
     &__organized-text, 
     &__organized-name {

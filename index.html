@@ -3,6 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="¡Crea y comparte grupos de intereses fácilmente! Organiza tus pasiones en espacios personalizados y conecta con otros que comparten tus gustos. ¡Explora y únete hoy!">
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="./build/css/app.css">
     <title>Meeti</title>
 </head>
@@ -19,15 +37,15 @@
                         </picture>
                     </a>
                 </div> <!-- logo -->
-                <nav class="navigation">
-                    <a href="#" class="navigation__link navigation__link--crear">Crear Grupo</a>
+                <nav class="navigation" aria-label="principal">
+                    <a href="./index.html#grupo" class="navigation__link navigation__link--crear">Crear Grupo</a>
                     <a href="#" class="navigation__link">Iniciar Sesion</a>
-                    <a href="#" class="navigation__link">Registrarse</a>
+                    <a href="./index.html#cuenta" class="navigation__link">Registrarse</a>
                 </nav> <!-- navigation -->
             </div> <!-- content -->
         </div> <!-- wrapper -->
     </header>
-    <section class="hero">
+    <section class="hero" id="cuenta">
         <h1 class="hero__title">Encuentra o Crea un grupo para compartir lo que más te gusta</h1>
         <a href="#" class="hero__link">Obtener una cuenta</a>  
     </section> <!-- hero -->
@@ -35,7 +53,7 @@
         <h2 class="search__title">Busca un grupo en tu ciudad</h2>
         <div class="wrapper">
             <form class="form">
-                <select name="campo" id="" class="form__campo">
+                <select name="campo" id="" class="form__campo" aria-label="Categorias">
                     <option value="Programción">Programación</option>
                     <option value="Diseño">Diseño</option>
                     <option value="Negocios">Negocios</option>
@@ -64,7 +82,7 @@
                         <picture>
                             <source srcset="./build/img/imagen1.avif" type="image/avif">
                             <source srcset="./build/img/imagen1.webp" type="image/webp">
-                            <img class="event__img" loading="lazy" src="./build/img/imagen1.jpg" alt="Imagen 1">
+                            <img class="event__img" width="302" height="189" loading="lazy" src="./build/img/imagen1.jpg" alt="Imagen 1">
                         </picture>
                         <div class="event__content">
                             <time datetime="2022-08-30" class="event__date">Jueves 30 de Septiembre del 2022</time>
@@ -74,7 +92,7 @@
                                     <picture>
                                         <source srcset="./build/img/perfil1.avif" type="image/avif">
                                         <source srcset="./build/img/perfil1.webp" type="image/webp">
-                                        <img loading="lazy" src="./build/img/perfil1.jpg" alt="Perfil de Christina Pascual">
+                                        <img loading="lazy" class="event__author--img" width="60" height="60" src="./build/img/perfil1.jpg" alt="Perfil de Christina Pascual">
                                     </picture>
                                 </div>
                                 <div class="event__author-info">
@@ -90,24 +108,24 @@
                         <picture>
                             <source srcset="./build/img/imagen2.avif" type="image/avif">
                             <source srcset="./build/img/imagen2.webp" type="image/webp">
-                            <img class="event__img" loading="lazy" src="./build/img/imagen2.jpg" alt="Imagen 2">
+                            <img class="event__img" width="302" height="189" loading="lazy" src="./build/img/imagen2.jpg" alt="Imagen 2">
                         </picture>
                         <div class="event__content">
                             <time datetime="2022-10-02" class="event__date">Lunes 02 de Octubre del 2022</time>
                             <h3 class="event__title">Bitcoin y otras Criptos</h3>
-                            <div class="event__author">
+                            <width= class="event__author">
                                 <div class="event__author-image">
                                     <picture>
                                         <source srcset="./build/img/perfil2.avif" type="image/avif">
                                         <source srcset="./build/img/perfil2.webp" type="image/webp">
-                                        <img loading="lazy" src="./build/img/perfil2.jpg" alt="Perfil de Christina Pascual">
+                                        <img loading="lazy" class="event__author--img" width="60" height="60" src="./build/img/perfil2.jpg" alt="Perfil de Christina Pascual">
                                     </picture>
                                 </div>
                                 <div class="event__author-info">
                                     <p class="event__organized-text">Organizado por:</p>
                                     <p class="event__organized-name">Christina Atoche Pascual</p>
                                 </div>
-                            </div>
+                            </width="60" height="60" div>
                         </div> <!-- content -->
                     </a>
                 </div> <!-- event -->
@@ -116,14 +134,18 @@
                         <picture>
                             <source srcset="./build/img/imagen3.avif" type="image/avif">
                             <source srcset="./build/img/imagen3.webp" type="image/webp">
-                            <img class="event__img" loading="lazy" src="./build/img/imagen3.jpg" alt="Imagen 3">
+                            <img class="event__img" width="302" height="189" loading="lazy" src="./build/img/imagen3.jpg" alt="Imagen 3">
                         </picture>
                         <div class="event__content">
                             <time datetime="2022-10-04" class="event__date">Miercoles 04 de Octubre del 2022</time>
                             <h3 class="event__title">Pizza paso a paso</h3>
-                            <div class="event__author">
+                            <width= class="event__author">
                                 <div class="event__author-image">
-                                    <img loading="lazy" src="./build/img/perfil1.jpg" alt="Perfil de Christina Pascual">
+                                    <picture>
+                                        <source srcset="./build/img/perfil1.avif" type="image/avif">
+                                        <source srcset="./build/img/perfil1.webp" type="image/webp">
+                                        <img  loading="lazy" class="event__author--img" width="60" height="60" src="./build/img/perfil1.jpg" alt="Perfil de Christina Pascual">
+                                    </picture>
                                     <!-- <picture>
                                         <source srcset="./build/img/perfil1.avif" type="image/avif">
                                         <source srcset="./build/img/perfil1.webp" type="image/webp">
@@ -134,7 +156,7 @@
                                     <p class="event__organized-text">Organizado por:</p>
                                     <p class="event__organized-name">Christina Atoche Pascual</p>
                                 </div>
-                            </div>
+                            </width="60" height="60" div>
                         </div> <!-- content -->
                     </a>
                 </div> <!-- event -->
@@ -150,7 +172,7 @@
                         <picture>
                             <source srcset="./build/img/categoria_12.avif" type="image/avif">
                             <source srcset="./build/img/categoria_12.webp" type="image/webp">
-                            <img loading="lazy" src="./build/img/categoria_1.jpg"  alt="Categoría 1">
+                            <img loading="lazy" width="304" height="202" src="./build/img/categoria_1.jpg"  alt="Categoría 1">
                         </picture>
                     </div>
                     <p class="categories__name">Programación</p>
@@ -160,7 +182,7 @@
                         <picture>
                             <source srcset="./build/img/categoria_2.avif" type="image/avif">
                             <source srcset="./build/img/categoria_2.webp" type="image/webp">
-                            <img loading="lazy" src="./build/img/categoria_2.jpg"  alt="Categoría 2">
+                            <img loading="lazy" width="304" height="202" src="./build/img/categoria_2.jpg"  alt="Categoría 2">
                         </picture>
                     </div>
                     <p class="categories__name">Diseño UX/UI</p>
@@ -170,7 +192,7 @@
                         <picture>
                             <source srcset="./build/img/categoria_3.avif" type="image/avif">
                             <source srcset="./build/img/categoria_3.webp" type="image/webp">
-                            <img loading="lazy" src="./build/img/categoria_3.jpg"  alt="Categoría 3">
+                            <img loading="lazy" width="304" height="202" src="./build/img/categoria_3.jpg"  alt="Categoría 3">
                         </picture>
                     </div>
                     <p class="categories__name">Negocios e Ideas</p>
@@ -180,7 +202,7 @@
                         <picture>
                             <source srcset="./build/img/categoria_4.avif" type="image/avif">
                             <source srcset="./build/img/categoria_4.webp" type="image/webp">
-                            <img loading="lazy" src="./build/img/categoria_4.jpg"  alt="Categoría 4">
+                            <img loading="lazy" width="304" height="202" src="./build/img/categoria_4.jpg"  alt="Categoría 4">
                         </picture>
                     </div>
                     <p class="categories__name">Ropa y Moda</p>
@@ -190,7 +212,7 @@
                         <picture>
                             <source srcset="./build/img/categoria_5.avif" type="image/avif">
                             <source srcset="./build/img/categoria_5.webp" type="image/webp">
-                            <img loading="lazy" src="./build/img/categoria_5.jpg"  alt="Categoría 5">
+                            <img loading="lazy" width="304" height="202" src="./build/img/categoria_5.jpg"  alt="Categoría 5">
                         </picture>
                     </div>
                     <p class="categories__name">Ejercicio y Bienestar</p>
@@ -200,7 +222,7 @@
                         <picture>
                             <source srcset="./build/img/categoria_6.avif" type="image/avif">
                             <source srcset="./build/img/categoria_6.webp" type="image/webp">
-                            <img loading="lazy" src="./build/img/categoria_6.jpg"  alt="Categoría 6">
+                            <img loading="lazy" width="304" height="202" src="./build/img/categoria_6.jpg"  alt="Categoría 6">
                         </picture>
                     </div>
                     <p class="categories__name">Fotografia</p>
@@ -210,7 +232,7 @@
                         <picture>
                             <source srcset="./build/img/categoria_7.avif" type="image/avif">
                             <source srcset="./build/img/categoria_7.webp" type="image/webp">
-                            <img loading="lazy" src="./build/img/categoria_7.jpg"  alt="Categoría 7">
+                            <img loading="lazy" width="304" height="202" src="./build/img/categoria_7.jpg"  alt="Categoría 7">
                         </picture>
                     </div>
                     <p class="categories__name">Comida</p>
@@ -220,7 +242,7 @@
                         <picture>
                             <source srcset="./build/img/categoria_8.avif" type="image/avif">
                             <source srcset="./build/img/categoria_8.webp" type="image/webp">
-                            <img loading="lazy" src="./build/img/categoria_8.jpg"  alt="Categoría 8">
+                            <img loading="lazy" width="304" height="202" src="./build/img/categoria_8.jpg"  alt="Categoría 8">
                         </picture>
                     </div>
                     <p class="categories__name">Diseño Interior</p>
@@ -230,7 +252,7 @@
                         <picture>
                             <source srcset="./build/img/categoria_9.avif" type="image/avif">
                             <source srcset="./build/img/categoria_9.webp" type="image/webp">
-                            <img loading="lazy" src="./build/img/categoria_9.jpg"  alt="Categoría 9">
+                            <img loading="lazy" width="304" height="202" src="./build/img/categoria_9.jpg"  alt="Categoría 9">
                         </picture>
                     </div>
                     <p class="categories__name">Café</p>
@@ -240,7 +262,7 @@
                         <picture>
                             <source srcset="./build/img/categoria_10.avif" type="image/avif">
                             <source srcset="./build/img/categoria_10.webp" type="image/webp">
-                            <img loading="lazy" src="./build/img/categoria_10.jpg"  alt="Categoría 10">
+                            <img loading="lazy" width="304" height="202" src="./build/img/categoria_10.jpg"  alt="Categoría 10">
                         </picture>
                     </div>
                     <p class="categories__name">Cine</p>
@@ -250,7 +272,7 @@
                         <picture>
                             <source srcset="./build/img/categoria_11.avif" type="image/avif">
                             <source srcset="./build/img/categoria_11.webp" type="image/webp">
-                            <img loading="lazy" src="./build/img/categoria_11.jpg"  alt="Categoría 11">
+                            <img loading="lazy" width="304" height="202" src="./build/img/categoria_11.jpg"  alt="Categoría 11">
                         </picture>
                     </div>
                     <p class="categories__name">Libros</p>
@@ -260,7 +282,7 @@
                         <picture>
                             <source srcset="./build/img/categoria_12.avif" type="image/avif">
                             <source srcset="./build/img/categoria_12.webp" type="image/webp">
-                            <img loading="lazy" src="./build/img/categoria_12.jpg"  alt="Categoría 12">
+                            <img loading="lazy" width="304" height="202" src="./build/img/categoria_12.jpg"  alt="Categoría 12">
                         </picture>
                     </div>
                     <p class="categories__name">Emprendimiento</p>
@@ -268,7 +290,7 @@
             </div> <!-- grid -->
         </div> <!-- wrapper -->
     </section> <!-- categories -->
-    <section class="groups">
+    <section class="groups" id="grupo">
         <div class="wrapper">
             <div class="groups__grid">
                 <div class="groups__block">
@@ -284,10 +306,10 @@
     </section> <!-- groups -->
     <footer class="footer">
         <div class="wrapper">
-            <nav class="navigation">
-                <a href="#" class="navigation__link navigation__link--crear">Crear Grupo</a>
+            <nav class="navigation"  aria-label="principal">
+                <a href="./index.html#grupo" class="navigation__link navigation__link--crear">Crear Grupo</a>
                 <a href="#" class="navigation__link">Iniciar Sesion</a>
-                <a href="#" class="navigation__link">Registrarse</a>
+                <a href="./index.html#cuenta" class="navigation__link">Registrarse</a>
             </nav> <!-- navigation -->
         </div> <!-- wrapper -->
         <p class="footer__copyright">Todos los Derechos Reservados. Meeti</p>

@@ -4,6 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="¡Crea y comparte grupos de intereses fácilmente! Organiza tus pasiones en espacios personalizados y conecta con otros que comparten tus gustos. ¡Explora y únete hoy!">
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <title>Meeti</title>
     <link rel="stylesheet" href="build/css/app.css">
 </head>
@@ -12,7 +30,7 @@
         <div class="wrapper">
             <div class="header__content">
                 <div class="header__logo">
-                    <a href="/index.html" aria-current="page" class="header__inicio">
+                    <a href="/index.html" class="header__inicio">
                         <picture>
                             <source srcset="./build/img/logo.avif" type="image/avif">
                             <source srcset="./build/img/logo.webp" type="image/webp">
@@ -20,10 +38,10 @@
                         </picture>
                     </a>
                 </div> <!-- logo -->
-                <nav class="navigation">
-                    <a href="#" class="navigation__link navigation__link--crear">Crear Grupo</a>
+                <nav class="navigation" aria-label="principal">
+                    <a href="./index.html#grupo" class="navigation__link navigation__link--crear">Crear Grupo</a>
                     <a href="#" class="navigation__link">Iniciar Sesion</a>
-                    <a href="#" class="navigation__link">Registrarse</a>
+                    <a href="./index.html#cuenta" class="navigation__link">Registrarse</a>
                 </nav> <!-- navigation -->
             </div> <!-- content -->
         </div> <!-- wrapper -->
@@ -37,7 +55,7 @@
                     <picture>
                         <source srcset="./build/img/meeti.avif" type="image/avif">
                         <source srcset="./build/img/meeti.webp" type="image/webp">
-                        <img loading="lazy" class="meeti__img" src="./build/img/meeti.jpg" alt="Meeti">
+                        <img loading="lazy" class="meeti__img" src="./build/img/meeti.jpg" alt="Meeti" width="304" height="182">
                     </picture>
                     <p class="meeti__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea totam fugit repellendus est minima? Facilis eum sequi quaerat enim debitis quidem cupiditate, minus similique commodi officiis eveniet distinctio eligendi. Vitae.</p>
                     <p class="meeti__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea totam fugit repellendus est minima? Facilis eum sequi quaerat enim debitis quidem cupiditate, minus similique commodi officiis eveniet distinctio eligendi. Vitae.</p>
@@ -46,7 +64,7 @@
                     <picture>
                         <source srcset="./build/img/mapa.avif" type="image/avif">
                         <source srcset="./build/img/mapa.webp" type="image/webp">
-                        <img loading="lazy" class="sidebar__img" src="./build/img/mapa.jpg"  alt="Mapa">
+                        <img loading="lazy" class="sidebar__img" src="./build/img/mapa.jpg"  alt="Mapa" width="304" height="180">
                     </picture>
                     <div class="sidebar__content">
                         <h3 class="sidebar__title">Información Meeti</h3>
@@ -71,10 +89,10 @@
 
     <footer class="footer">
         <div class="wrapper">
-            <nav class="navigation">
-                <a href="#" class="navigation__link navigation__link--crear">Crear Grupo</a>
+            <nav class="navigation" aria-label="principal">
+                <a href="./index.html#grupo" class="navigation__link navigation__link--crear">Crear Grupo</a>
                 <a href="#" class="navigation__link">Iniciar Sesion</a>
-                <a href="#" class="navigation__link">Registrarse</a>
+                <a href="./index.html#cuenta" class="navigation__link">Registrarse</a>
             </nav> <!-- navigation -->
         </div> <!-- wrapper -->
         <p class="footer__copyright">Todos los Derechos Reservados. Meeti</p>
