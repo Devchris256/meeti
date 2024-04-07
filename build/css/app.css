@@ -337,4 +337,35 @@ p {
   font-weight: 700;
   text-align: center;
 }
+
+.groups {
+  color: #FFFFFF;
+  padding: 3.125rem 0;
+  background-image: linear-gradient(to bottom, #B8336A 0%, #B8336A 50%, #068D9D 50%, #068D9D 100%);
+}
+@media (min-width: 768px) {
+  .groups {
+    background-image: linear-gradient(to right, #B8336A 0%, #B8336A 50%, #068D9D 50%, #068D9D 100%);
+  }
+}
+.groups__grid {
+  display: grid;
+  gap: 3.125rem;
+  grid-template-columns: repeat(1, 1fr);
+}
+@media (min-width: 768px) {
+  .groups__grid {
+    display: grid;
+    gap: 3.125rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.groups__title {
+  font-size: 1.875rem;
+}
+.groups__text {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  line-height: 2;
+}
 /*# sourceMappingURL=app.css.map */
