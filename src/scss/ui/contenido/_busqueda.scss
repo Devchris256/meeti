@@ -17,7 +17,11 @@
     gap: 1.25rem;
 
     @include m.tablet { 
-        @include m.grid(4, 3rem);
+        @include m.grid(3, 1.875rem);
+    }
+
+    @include m.desktop { 
+        @include m.grid(4, 1.875rem);
     }
 
     &__campo {
@@ -28,5 +32,10 @@
     &__submit {
         @include m.button(v.$primary, v.$white);
         margin-block-start: 0;
+        grid-column: 2;
+
+        @include m.desktop {
+            grid-column: unset;
+        }
     }
 }
