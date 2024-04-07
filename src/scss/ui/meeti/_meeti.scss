@@ -1,0 +1,32 @@
+
+@use '../../base/variables' as v;
+@use '../../base/minxis' as m;
+
+.meeti {
+    &__name {
+        text-align: center;
+    }
+
+    &__grid {
+        margin-block-start: 2rem;
+    }
+
+    &__img {
+        inline-size: 100%;
+        height: auto;
+    }
+
+    @include m.tablet {
+
+        &__grid {
+            @include m.grid (3, 1.25rem)
+        }
+
+        &__info {
+            grid-column: 1 /3;
+        }
+    }
+
+
+
+}

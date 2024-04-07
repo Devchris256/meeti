@@ -1,0 +1,32 @@
+@use '../../base/variables' as v;
+@use '../../base/minxis' as m;
+
+.sidebar {
+    grid-column: 3 /4;
+
+    &__img {
+        inline-size: 100%;
+        height: auto;
+    }
+    
+    &__content {
+        text-align: center;
+        padding-block: 2rem;
+        color: v.$white;
+        background-color: v.$secundary;
+    }
+
+    &__title,
+    &__text {
+        color: v.$white;
+    }
+
+    &__title span,
+    &__text span {
+        font-weight: 700;
+    }
+
+    &__text:last-of-type span {
+        font-weight: 400;
+    }
+}
