@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "Staatliches";
+  src: url("../fonts/Staatliches-Regular.woff2") format("woff2"), url("../fonts/Staatliches-Regular.woff") format("woff"), url("../fonts/Staatliches-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Regular.woff2") format("woff2"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Bold.woff2") format("woff2"), url("../fonts/Raleway-Bold.woff") format("woff"), url("../fonts/Raleway-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Black.woff2") format("woff2"), url("../fonts/Raleway-Black.woff") format("woff"), url("../fonts/Raleway-Black.ttf") format("truetype");
+  font-weight: 900;
+}
+@supports (font-variation-settings: normal) {
+  @font-face {
+    font-family: "Raleway";
+    src: url("../fonts/Raleway-VariableFont_wght.woff2") format(woff2) tech(variations), url("../fonts/Raleway-VariableFont_wght.woff2") format("woff2-variations");
+    font-weight: 100 900;
+  }
+}
+/** Media Queries **/
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.wrapper {
+  inline-size: 95%;
+  max-inline-size: 75rem;
+  margin: 0 auto;
+}
+
+img {
+  max-inline-size: 100%;
+  display: block;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+/*# sourceMappingURL=app.css.map */

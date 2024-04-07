@@ -1,0 +1,71 @@
+// fuente personalizada - estatica: Staatliches
+
+@font-face {
+    font-family: "Staatliches";
+    src:
+      url("../fonts/Staatliches-Regular.woff2") format("woff2"),
+      url("../fonts/Staatliches-Regular.woff") format("woff"),
+      url("../fonts/Staatliches-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+// fuente personalizada estatica: Raleway
+
+@font-face {
+    font-family: "Raleway";
+    src:
+      url("../fonts/Raleway-Regular.woff2") format("woff2"),
+      url("../fonts/Raleway-Regular.woff") format("woff"),
+      url("../fonts/Raleway-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src:
+      url("../fonts/Raleway-Bold.woff2") format("woff2"),
+      url("../fonts/Raleway-Bold.woff") format("woff"),
+      url("../fonts/Raleway-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src:
+      url("../fonts/Raleway-Black.woff2") format("woff2"),
+      url("../fonts/Raleway-Black.woff") format("woff"),
+      url("../fonts/Raleway-Black.ttf") format("truetype");
+    font-weight: 900;
+}
+
+
+// Fuente personalizada Variable: Raleway
+  
+@supports (font-variation-settings: normal) {
+    @font-face {
+      font-family: "Raleway";
+      src:
+        url("../fonts/Raleway-VariableFont_wght.woff2") format(woff2) tech(variations),  /* Sintaxis moderna */
+        url("../fonts/Raleway-VariableFont_wght.woff2") format("woff2-variations");
+      font-weight: 100 900;
+    }
+}
+
+
+// Fuentes
+$fontPrimary: 'Raleway', sans-serif;
+$fontTitle: 'Staatliches', cursive;
+
+// Tamaño de Media Queries
+$phone: 480px;
+$tablet: 768px;
+$desktop: 1024px;
+
+// Colores
+$primary: #B8336A;
+$secundary: #068D9D;
+$terciary:  #ff8015;
+$black: #000;
+$white: #FFFFFF;
+$grey: #484349;
+$greyLight: #F2F2F2;
